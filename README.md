@@ -34,14 +34,8 @@ Crie um arquivo chamado  **`index.html`**  e cole este código. Ele é o formul�
 
 html
 ```
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Cadastro de Alunos</title>
-</head>
-<body>
-    <h2>📝 Cadastro de Alunos</h2>
+
+    <h2> Cadastro de Alunos</h2>
     <!-- O 'action' diz para onde os dados vão quando clicamos no botão -->
     <form action="/salvar" method="POST">
         <input type="text" name="nome" placeholder="Digite seu nome" required>
@@ -50,8 +44,7 @@ html
         <br><br>
         <button type="submit">Cadastrar no Banco</button>
     </form>
-</body>
-</html>
+
 
 ```
 
@@ -106,7 +99,7 @@ Use o código com cuidado.
 2.  **Ligue o servidor:**  
     `node app.js`
 3.  **Abra no navegador:**  Clique em "Open in Browser".
-4.  **Verifique o banco:**  Após cadastrar, pare o servidor (`Ctrl + C`) e digite:  
+4.  **Verifique o banco:**  Após cadastrar, pare o servidor e digite:  
     `sqlite3 sistema.db "SELECT * FROM usuarios;"`
 
 ----------
